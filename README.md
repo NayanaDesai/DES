@@ -5,11 +5,12 @@ How to use it ?
 
 1.Install the BitVector library: https://pypi.python.org/pypi/BitVector (Use it's readme for installation instructions)
 
-2.Go to the destination of .py files in the command line.
+2.Download the files and go to their destination in the command line.
 
 3.To encrypt type : python des.py and to decrypt type : python invdes.py
 
 What is the difference between des.py and invdes.py?
+
 ->Only one line that reverses the array of keys ! 
 
     def encrypt(messages):
