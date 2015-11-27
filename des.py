@@ -18,7 +18,6 @@ from BitVector import *
 import sys
 
 def encrypt(messages):
-  sys.stdout = open('out.txt', 'w')
   rno=0 #round no. counter
   message = BitVector(hexstring = messages)#original message
   message=message.permute(ip) #perform intial permutation
@@ -62,7 +61,6 @@ def encrypt(messages):
   
 
 def generate_key(key):
-  sys.stdout = open('key.txt', 'w')
   key64 = BitVector(hexstring = key)#original 64-bit key
   key56=key64.permute(pc_1)# 56-bit permutation by pc-1
   global k #key container
